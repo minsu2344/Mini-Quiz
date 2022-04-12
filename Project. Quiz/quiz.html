@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Quiz 1</title>
+</head>
+<body>
+  <div id="quiz">
+    <div class="scoreBox">
+      <div class="progresBar">
+        <p id="stage">Question 1/4</p>
+        <progress id="meter" class="meter" value="25" max="100"></progress>
+      </div>
+      <div class="score">
+        <h3>score</h3>
+        <h2 id="score">0</h2>
+      </div>
+    </div>
+
+    <div class="quizBox" id="quiz_1">
+      <div class="qustionBox">
+        <h1 class="question">대한민국의 수도는?</h1>
+        <div class="hint">
+          <img src="/Project. Quiz/img/3.png" alt="">
+          <p>🎁 힌트</p>
+        </div>
+        <div class="hintOn hidden">
+          <img class="hidden" src="/Project. Quiz/img/5.png" alt="">
+          <img class="hidden" src="/Project. Quiz/img/6.png" alt="">
+        </div>
+      </div>
+      <div class="answerBox">
+        <div class="answer quiz1">
+          <div class="child1">1</div>
+          <p>뉴욕</p>
+        </div>
+        <div class="answer quiz1">
+          <div class="child2">2</div>
+          <p>파리</p>
+        </div>
+        <div class="answer quiz1">
+          <div class="child3">3</div>
+          <p>베를린</p>
+        </div>
+        <div class="answer quiz1" id="correct_1">
+          <div class="child4">4</div>
+          <p>서울</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden quizBox" id="quiz_2">
+      <div class="qustionBox">
+        <h1 class="question">컴퓨터와 관련 없는 것은?</h1>
+        <div class="hint">
+          <img src="/Project. Quiz/img/3.png" alt="">
+          <p>🎁 힌트</p>
+        </div>
+      </div>
+      <div class="answerBox">
+        <div class="answer quiz2">
+          <div class="child1">1</div>
+          <p>키보드</p>
+        </div>
+        <div class="answer quiz2">
+          <div class="child2">2</div>
+          <p>마우스</p>
+        </div>
+        <div class="answer quiz2" id="correct_2">
+          <div class="child3">3</div>
+          <p>에어백</p>
+        </div>
+        <div class="answer quiz2">
+          <div class="child4">4</div>
+          <p>모니터</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden quizBox" id="quiz_3">
+      <div class="qustionBox">
+        <h1 class="question">'짱구'가 나오는 만화 제목은?</h1>
+        <div class="hint">
+          <img src="/Project. Quiz/img/3.png" alt="">
+          <p>🎁 힌트</p>
+        </div>
+      </div>
+      <div class="answerBox">
+        <div class="answer quiz3" id="correct_3">
+          <div class="child1">1</div>
+          <p>짱구는 못말려</p>
+        </div>
+        <div class="answer quiz3">
+          <div class="child2">2</div>
+          <p>짱구: 엔드 게임</p>
+        </div>
+        <div class="answer quiz3">
+          <div class="child3">3</div>
+          <p>스트리트 짱구 파이터</p>
+        </div>
+        <div class="answer quiz3">
+          <div class="child4">4</div>
+          <p>우리 짱구가 달라졌어요</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden quizBox" id="quiz_4">
+      <div class="qustionBox">
+        <h1 class="question">서울 '구' 이름이 아닌 것은?</h1>
+        <div class="hint">
+          <img src="/Project. Quiz/img/3.png" alt="">
+          <p>🎁 힌트</p>
+        </div>
+      </div>
+      <div class="answerBox">
+        <div class="answer quiz4">
+          <div class="child1">1</div>
+          <p>영등포구</p>
+        </div>
+        <div class="answer quiz4">
+          <div class="child2">2</div>
+          <p>마포구</p>
+        </div>
+        <div class="answer quiz4" id="correct_4">
+          <div class="child3">3</div>
+          <p>발야구</p>
+        </div>
+        <div class="answer quiz4">
+          <div class="child4">4</div>
+          <p>광진구</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="end hidden" id="end">
+    <img src="/Project. Quiz/img/4.png" alt="">
+    <h1 id="totalScore"></h1>
+    <a id="again" href="quiz.html"><input type="button" value="Play again"></a>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
